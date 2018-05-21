@@ -6,8 +6,8 @@ const app = express();
 app.use(express.static('public'));
 
 // ROUTES
-app.get("/pick-a-color/:name", (request, response) => {
-    response.send(`You picked the color ${request.params.name}` );
+app.get("/pick-a-color/:color", (request, response) => {
+    response.send(`You picked the color ${request.params.color}` );
   });
 
 // SERVER START
